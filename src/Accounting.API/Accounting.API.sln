@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197 d17.13
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Accounting.API", "Accounting.API.csproj", "{55B89AE7-5B33-4112-83A0-6B0547753C3F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{55B89AE7-5B33-4112-83A0-6B0547753C3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55B89AE7-5B33-4112-83A0-6B0547753C3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55B89AE7-5B33-4112-83A0-6B0547753C3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55B89AE7-5B33-4112-83A0-6B0547753C3F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {78E509E9-26A4-412C-B119-CD932A5A851D}
+	EndGlobalSection
+EndGlobal
