@@ -19,4 +19,11 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.6.2" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Accounting.Application\Accounting.Application.csproj" />
+    <ProjectReference Include="..\Accounting.Infrastructure\Accounting.Infrastructure.csproj" />
+    <ProjectReference Include="..\Accounting.Persistence\Accounting.Persistence.csproj" />
+    <ProjectReference Include="..\Accounting.Shared\Accounting.Shared.csproj" />
+  </ItemGroup>
+
 </Project>

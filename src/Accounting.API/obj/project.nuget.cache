@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "e1xX/XQg8UQ=",
+  "dgSpecHash": "UCvYjtTgiUw=",
   "success": true,
-  "projectFilePath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\Accounting.API.csproj",
+  "projectFilePath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\Accounting.API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\rober\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\rober\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\7.0.0\\microsoft.bcl.asyncinterfaces.7.0.0.nupkg.sha512",

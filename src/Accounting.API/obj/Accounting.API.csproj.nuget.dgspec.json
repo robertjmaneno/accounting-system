@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\Accounting.API.csproj": {}
+    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\Accounting.API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\Accounting.API.csproj": {
+    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\Accounting.API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\Accounting.API.csproj",
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\Accounting.API.csproj",
         "projectName": "Accounting.API",
-        "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\Accounting.API.csproj",
+        "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\Accounting.API.csproj",
         "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\obj\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -31,7 +31,20 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Application\\Accounting.Application.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Application\\Accounting.Application.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Infrastructure\\Accounting.Infrastructure.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Infrastructure\\Accounting.Infrastructure.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Persistence\\Accounting.Persistence.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Persistence\\Accounting.Persistence.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj"
+              }
+            }
           }
         },
         "warningProperties": {
@@ -104,6 +117,426 @@
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
             },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Application\\Accounting.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Application\\Accounting.Application.csproj",
+        "projectName": "Accounting.Application",
+        "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Application\\Accounting.Application.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Application\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj",
+        "projectName": "Accounting.Domain",
+        "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Infrastructure\\Accounting.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Infrastructure\\Accounting.Infrastructure.csproj",
+        "projectName": "Accounting.Infrastructure",
+        "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Infrastructure\\Accounting.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Infrastructure\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Persistence\\Accounting.Persistence.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Persistence\\Accounting.Persistence.csproj",
+        "projectName": "Accounting.Persistence",
+        "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Persistence\\Accounting.Persistence.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Persistence\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Domain\\Accounting.Domain.csproj"
+              },
+              "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj": {
+                "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.205/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj",
+        "projectName": "Accounting.Shared",
+        "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj",
+        "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\rober\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        },
+        "SdkAnalysisLevel": "9.0.200"
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            },
+            {
+              "name": "Microsoft.WindowsDesktop.App.Ref",
+              "version": "[8.0.17, 8.0.17]"
+            }
+          ],
+          "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }

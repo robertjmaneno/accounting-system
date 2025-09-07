@@ -1014,6 +1014,71 @@
         "build": {
           "buildTransitive/net6.0/_._": {}
         }
+      },
+      "Accounting.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Accounting.Domain": "1.0.0",
+          "Accounting.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Accounting.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Accounting.Application.dll": {}
+        }
+      },
+      "Accounting.Domain/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Accounting.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Accounting.Domain.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Accounting.Domain.dll": {}
+        }
+      },
+      "Accounting.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Accounting.Domain": "1.0.0",
+          "Accounting.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Accounting.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Accounting.Infrastructure.dll": {}
+        }
+      },
+      "Accounting.Persistence/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "dependencies": {
+          "Accounting.Domain": "1.0.0",
+          "Accounting.Shared": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Accounting.Persistence.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Accounting.Persistence.dll": {}
+        }
+      },
+      "Accounting.Shared/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Accounting.Shared.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Accounting.Shared.dll": {}
+        }
       }
     }
   },
@@ -3277,10 +3342,39 @@
         "system.threading.channels.nuspec",
         "useSharedDesignerContext.txt"
       ]
+    },
+    "Accounting.Application/1.0.0": {
+      "type": "project",
+      "path": "../Accounting.Application/Accounting.Application.csproj",
+      "msbuildProject": "../Accounting.Application/Accounting.Application.csproj"
+    },
+    "Accounting.Domain/1.0.0": {
+      "type": "project",
+      "path": "../Accounting.Domain/Accounting.Domain.csproj",
+      "msbuildProject": "../Accounting.Domain/Accounting.Domain.csproj"
+    },
+    "Accounting.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../Accounting.Infrastructure/Accounting.Infrastructure.csproj",
+      "msbuildProject": "../Accounting.Infrastructure/Accounting.Infrastructure.csproj"
+    },
+    "Accounting.Persistence/1.0.0": {
+      "type": "project",
+      "path": "../Accounting.Persistence/Accounting.Persistence.csproj",
+      "msbuildProject": "../Accounting.Persistence/Accounting.Persistence.csproj"
+    },
+    "Accounting.Shared/1.0.0": {
+      "type": "project",
+      "path": "../Accounting.Shared/Accounting.Shared.csproj",
+      "msbuildProject": "../Accounting.Shared/Accounting.Shared.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net8.0": [
+      "Accounting.Application >= 1.0.0",
+      "Accounting.Infrastructure >= 1.0.0",
+      "Accounting.Persistence >= 1.0.0",
+      "Accounting.Shared >= 1.0.0",
       "Microsoft.EntityFrameworkCore >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Design >= 9.0.8",
       "Microsoft.EntityFrameworkCore.Tools >= 10.0.0-preview.7.25380.108",
@@ -3294,11 +3388,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\Accounting.API.csproj",
+      "projectUniqueName": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\Accounting.API.csproj",
       "projectName": "Accounting.API",
-      "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\Accounting.API.csproj",
+      "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\Accounting.API.csproj",
       "packagesPath": "C:\\Users\\rober\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\src\\Accounting.API\\obj\\",
+      "outputPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.API\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -3318,7 +3412,20 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Application\\Accounting.Application.csproj": {
+              "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Application\\Accounting.Application.csproj"
+            },
+            "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Infrastructure\\Accounting.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Infrastructure\\Accounting.Infrastructure.csproj"
+            },
+            "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Persistence\\Accounting.Persistence.csproj": {
+              "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Persistence\\Accounting.Persistence.csproj"
+            },
+            "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj": {
+              "projectPath": "C:\\Users\\rober\\Documents\\personal_projects\\AccountingSystem\\accounting-system\\src\\Accounting.Shared\\Accounting.Shared.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
